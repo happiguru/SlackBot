@@ -2,9 +2,10 @@ class PairBot
     attr_accessor :channel
     attr_accessor :text
 
+    public
     def initialize
         @channel = channel
-        @welcome_message = text
+        @text = text
     end
 
     def publishMessage(channel, text)
